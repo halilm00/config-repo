@@ -13,4 +13,4 @@ spring:
             - Path=/discovery/**
             - Method=GET
           filters:
-            - RewritePath=/discovery(?/<segment>.*), /${segment}
+            - RewritePath=/discovery(?/)(?<segment>.*), /${segment}
