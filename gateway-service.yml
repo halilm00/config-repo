@@ -11,5 +11,6 @@ spring:
           uri: "http://localhost:8761"
           predicates:
             - Path=/discovery/**
+            - Method=GET
           filters:
-            - RewritePath=/discovery/(?<segment>.*), /${segment}
+            - RewritePath=/discovery(?/<segment>.*), /${segment}
