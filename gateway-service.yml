@@ -14,4 +14,4 @@ spring:
         - id: discovery-service
           uri: http://localhost:8761
           predicates:
-                - Path=/
+            - Path=/
