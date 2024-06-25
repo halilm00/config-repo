@@ -16,6 +16,8 @@ spring:
       binder:
         brokers:
           - http://localhost:29092
+  kafka:
+    bootstrap-servers: http://localhost:29092
 
 
   bus:
