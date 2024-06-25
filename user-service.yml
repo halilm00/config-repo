@@ -11,18 +11,20 @@ management:
         include: "*"
 
 spring:
-    stream:
-      kafka:
-        binder:
-          brokers:
-            - http://localhost:29092
-    bus:
-      trace:
-        enabled: true
-      refresh:
-        enabled: true
-      env:
-        enabled: true
+  stream:
+    kafka:
+      binder:
+        brokers:
+          - http://localhost:29092
+
+
+  bus:
+    trace:
+      enabled: true
+    refresh:
+      enabled: true
+    env:
+      enabled: true
 
 server:
   port: 8081
