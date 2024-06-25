@@ -17,6 +17,11 @@ spring:
         binder:
           brokers:
             - http://localhost:29092
+          bindings:
+            springCloudBusOutput:
+              destination: springCloudBusTopic
+            springCloudBusInput:
+              destination: springCloudBusTopic
     bus:
       trace:
         enabled: true
