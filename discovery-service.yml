@@ -16,5 +16,23 @@ management:
       exposure:
         include: "*"
 
+spring:
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers:
+            - http://localhost:29092
+    bus:
+      trace:
+        enabled: true
+      refresh:
+        enabled: true
+      env:
+        enabled: true
+  kafka:
+    bootstrap-servers:
+      - http://localhost:29092
+      
 server:
   port: 8761

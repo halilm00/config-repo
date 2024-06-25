@@ -22,6 +22,22 @@ spring:
           filters:
             - RewritePath=/users(?<segment>.*), /${segment}
 
+    stream:
+      kafka:
+        binder:
+          brokers:
+            - http://localhost:29092
+    bus:
+      trace:
+        enabled: true
+      refresh:
+        enabled: true
+      env:
+        enabled: true
+  kafka:
+    bootstrap-servers:
+      - http://localhost:29092
+
 management:
   endpoints:
     web:
