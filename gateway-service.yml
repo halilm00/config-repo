@@ -31,13 +31,13 @@ spring:
             - Method=GET
           filters:
             - RewritePath=/discovery(?<segment>.*), /${segment}
-        - id: "user-service"
-          uri: "http://localhost:8081"
-          predicates:
-            - Path=/users/**
-            - Method=GET
-          filters:
-            - RewritePath=/users(?<segment>.*), /${segment}
+#        - id: "user-service"
+#          uri: "http://localhost:8081"
+#          predicates:
+#            - Path=/users/**
+#            - Method=GET
+#          filters:
+#            - RewritePath=/users(?<segment>.*), /${segment}
   kafka:
     bootstrap-servers:
       - http://localhost:29092
