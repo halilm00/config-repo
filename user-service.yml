@@ -31,4 +31,4 @@ server:
   port: 8081
 
 example:
-  message: "This is a test message from user-service"
+  message: "11111 This is a test message from user-service"
