@@ -29,3 +29,6 @@ spring:
       - http://localhost:29092
 server:
   port: 8081
+
+controller-test:
+  message: "This is a test message from user-service"
