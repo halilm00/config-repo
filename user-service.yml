@@ -37,3 +37,7 @@ server:
 
 example:
   message: "44444 This is a test message from user-service"
+
+logging:
+  pattern:
+    level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]"
