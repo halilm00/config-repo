@@ -37,3 +37,6 @@ server:
 
 example:
   message: "44444 This is a test message from user-service"
+
+rest-api-2:
+  url: http://localhost:8081
