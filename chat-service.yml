@@ -17,6 +17,8 @@ zipkin:
   tracing:
     endpoint:https://localhost:9411
 
+
+
 spring:
   zipkin:
     base-url: http://localhost:9411
@@ -49,3 +51,4 @@ example:
 
 rest-api-2:
   url: http://localhost:8081
+
