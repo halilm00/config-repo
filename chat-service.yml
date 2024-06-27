@@ -17,7 +17,8 @@ zipkin:
   tracing:
     endpoint:https://localhost:9411
 
-
+tracing:
+  url: http://localhost:4317
 
 spring:
   zipkin:
