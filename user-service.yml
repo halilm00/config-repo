@@ -8,7 +8,9 @@ management:
   endpoints:
     web:
       exposure:
-        include: "*"
+        include:
+          - "*"
+          - "prometheus"
   tracing:
     enabled: true
     sampling:
